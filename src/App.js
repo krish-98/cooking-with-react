@@ -13,7 +13,7 @@ function App() {
       <h1>Counter Hooks</h1>
       <CounterHooks initialCounter={0} />
       <button onClick={() => setTheme(prevTheme => {
-        return prevTheme == "red" ? "blue" : "red"
+        return prevTheme === "red" ? "blue" : "red"
       })}>Toggle button</button>
     </ThemeContext.Provider>
   )
